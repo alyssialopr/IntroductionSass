@@ -1,0 +1,33 @@
+@use "../abstract/_variables" as *;
+@use "../base/_typography" as *;
+@use "../abstract/_mixins" as *;
+
+.preparation {
+  background-image: url("../img/ismael-trevino-NDyuR4Huig8-unsplash.png");
+  height: 110vh;
+  color: $color-white;
+  display: flex;
+  justify-content: center;
+
+  .undertexte {
+    background-color: $color-lime-opacity;
+    align-items: center;
+    width: 45%;
+    height: 90%;
+    margin-top: 30px;
+    button {
+      @include buttons;
+      background-color: $color-white;
+      color: $color-lime-green;
+    }
+  }
+
+  .titreprep {
+    font-weight: $bold;
+    font-size: $size-title;
+    opacity: 1;
+  }
+  .contentprep {
+    padding: 40px;
+  }
+}

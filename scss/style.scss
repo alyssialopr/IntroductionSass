@@ -1,0 +1,13 @@
+@use "abstract/variables";
+@use "base/_reset";
+@use "base/_typography" as *;
+// @use 'layout/_grid';
+@use "component/header";
+@use "component/salade";
+@use "component/preparation";
+@use "component/footer";
+@use "abstract/_mixins";
+
+*{
+   font-family: $poppins;
+}

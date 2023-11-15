@@ -1,0 +1,36 @@
+@use "../abstract/_variables" as *;
+@use "../base/_typography" as *;
+@use "../abstract/_mixins" as *;
+
+.salade {
+  display: grid;
+  .droite {
+    grid-column: 1/2;
+    margin-top: 50px;
+    margin-left: 10px;
+    .saladetitle {
+      font-weight: $bold;
+      color: $color-lime-green;
+      font-size: $size-title;
+      @include salade;
+    }
+    p {
+      color: $color-grey;
+      @include salade;
+    }
+    .plus {
+      @include salade;
+      @include buttons;
+      background-color: $color-lime-green;
+      color: $color-white;
+      margin-bottom: 30px;
+    }
+  }
+  .gauche {
+    grid-column: 2/2;
+
+    img {
+      width: 90%;
+    }
+  }
+}
