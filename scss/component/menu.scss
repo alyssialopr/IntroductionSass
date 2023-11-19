@@ -1,0 +1,79 @@
+@use "../abstract/_variables" as *;
+@use "../base/_typography" as *;
+@use "../abstract/_mixins" as *;
+
+.menu {
+  display: grid;
+  .top {
+    grid-column: 1 / 3;
+    padding: 30px;
+    h1 {
+      font-weight: $bold;
+      color: $color-lime-green;
+      font-size: $size-title;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .salsade {
+    padding: 50px;
+    display: grid;
+    .deuxdeux {
+      border: 1px solid $color-lime-green;
+    }
+    .jaime,
+    .jadore,
+    .deuxdeux,
+    .passion,
+    .folie {
+      padding: 10px;
+      .priceandsal {
+        display: flex;
+      }
+      .namesalade {
+        font-weight: $bold;
+        color: $color-lime-green;
+      }
+      .price {
+        font-weight: $bold;
+        color: $color-lime-green;
+        padding-left: 150px;
+      }
+    }
+  }
+  .titleblue {
+    color: $color-blue;
+    font-weight: $bold;
+    font-size: $size-title;
+    // transform: rotate(-15deg);
+  }
+  button {
+    @include buttons;
+    background-color: $color-lime-green;
+    color: $color-white;
+  }
+
+  .saladeright {
+    .titlegreen {
+      color: $color-lime-green;
+      font-weight: $bold;
+      font-size: $size-title;
+      transform: rotate(-15deg);
+    }
+    .titleblue {
+      color: $color-blue;
+      font-weight: $bold;
+      font-size: $size-title;
+      transform: rotate(-15deg);
+    }
+    button {
+      @include buttons;
+      background-color: $color-lime-green;
+      color: $color-white;
+      margin: 80px;
+    }
+    .seconde {
+      padding-top: 100px;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@use "../abstract/_variables" as *;
+@use "../base/_typography" as *;
+@use "../abstract/_mixins" as *;
+
+.vertbleu {
+  background-image: url("../img/louis-hansel-MlPD-AzZYMg-unsplash.png");
+  height: 110vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  color: $color-white;
+  .vert {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $color-lime-opacity;
+    width: 50%;
+  }
+
+  .bleu {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $color-blue-opacity;
+  }
+}

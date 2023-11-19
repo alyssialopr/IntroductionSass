@@ -1,2 +1,28 @@
 @use "../abstract/_variables" as *;
 @use "../base/_typography" as *;
+
+footer{
+    display: grid;
+    background-color: $color-lime-green;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 30px;
+    color: $color-white;
+
+    img{
+        padding: 20px;
+        align-self: center;
+    }
+
+    h3{
+        font-weight: $bold;
+        padding: 20px;
+        text-align: center;
+    }
+
+    p{
+        padding-inline: 20px;
+        padding-bottom: 10px;
+        text-align: center;
+        cursor: pointer;
+    }
+}

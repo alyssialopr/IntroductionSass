@@ -8,18 +8,21 @@
   color: $color-white;
   display: flex;
   justify-content: center;
+  
 
   .undertexte {
+    padding: 10px;
     background-color: $color-lime-opacity;
     align-items: center;
     width: 45%;
     height: 90%;
     margin-top: 30px;
-    button {
-      @include buttons;
-      background-color: $color-white;
-      color: $color-lime-green;
-    }
+      button {
+        @include buttons;
+        margin-top: -25px;
+        background-color: $color-white;
+        color: $color-lime-green;
+      }
   }
 
   .titreprep {

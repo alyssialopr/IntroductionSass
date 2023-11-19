@@ -1,27 +1,22 @@
 @use "../abstract/_variables" as *;
 @use "../base/_typography" as *;
 
-// .background_opacity{
-//     background: linear-gradient(to bottom, $color-lime-green, $color-blue);
-//     opacity: 0.5;
-//     position: absolute;
-// }
-
 img.logo {
-  position: absolute;
-  top: 0;
-  z-index: 1;
-  margin: 15px;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    margin: 15px;
 }
 
 img.overlay {
-  width: 100%;
-  // width: 30vh;
-  height: 100vh;
-  object-fit: cover;
-  position: relative;
-  z-index: -1;
-}
+    width: 100%;
+    // width: 30vh;
+    height: 100vh;
+    object-fit: cover;
+    position: relative;
+    z-index: -1;
+  }
+
 .overlay-color {
   position: absolute;
   top: 0;
@@ -29,19 +24,9 @@ img.overlay {
   bottom: 0;
   left: 0;
   z-index: 0;
-  background: linear-gradient(to bottom, $color-lime-green, $color-blue);
+  background: linear-gradient(to left, $color-lime-green, $color-blue);
   opacity: 0.5;
 }
-
-// .nav > ul > button {
-//   background-color: $color-white;
-//   color: $color-lime-green;
-//   border-radius: 10px;
-//   padding: 5px;
-//   font-weight: $semibold;
-//   border: 2px solid $color-white;
-//   cursor: pointer;
-// }
 
 .nav {
   position: absolute;
@@ -50,14 +35,14 @@ img.overlay {
   margin-right: 10px;
 
   button {
-  background-color: $color-white;
-  color: $color-lime-green;
-  border-radius: 10px;
-  padding: 5px;
-  font-weight: $semibold;
-  border: 2px solid $color-white;
-  cursor: pointer;
-}
+    background-color: $color-white;
+    color: $color-lime-green;
+    border-radius: 10px;
+    padding: 5px;
+    font-weight: $semibold;
+    border: 2px solid $color-white;
+    cursor: pointer;
+  }
 
   li {
     list-style: none;
